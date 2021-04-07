@@ -3,14 +3,14 @@
 }
 
 .main {
-  display: flex;
+  display: grid;
   justify-content: center;
   padding-top: 50px;
 
   &__container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 200px);
+    gap: $distanceUnderCards $distanceBetweenCards;
     max-width: mainContainerSize($cardWidth, $distanceBetweenCards);
   }
 }
